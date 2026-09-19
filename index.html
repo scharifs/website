@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nordstern Marketing</title>
+<meta name="description" content="Performance Marketing für E-Commerce Marken. Google Ads, Meta Ads und E-Mail Marketing.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #14213d;
+    --muted: #5c667a;
+    --line: #dfe3ea;
+    --accent: #e8b931;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1424;
+      --ink: #f2f4f8;
+      --muted: #9aa3b5;
+      --line: #263049;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-weight: 700; letter-spacing: -0.01em; text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a { margin-left: 24px; text-decoration: none; color: var(--muted); font-size: 15px; }
+  nav a:hover { color: var(--ink); }
+
+  .hero { padding: 96px 0 88px; }
+  h1 {
+    font-size: clamp(38px, 7vw, 68px);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    margin: 0 0 28px;
+    max-width: 14em;
+  }
+  .lead { font-size: clamp(18px, 2.4vw, 22px); color: var(--muted); max-width: 32em; margin: 0 0 40px; }
+  .btn {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 15px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn:hover { background: var(--accent); color: #14213d; }
+
+  section { padding: 72px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 20px; }
+  p { max-width: 38em; margin: 0 0 16px; }
+  .muted { color: var(--muted); }
+
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-top: 32px; }
+  .services h3 { margin: 0 0 8px; font-size: 18px; }
+  .services p { color: var(--muted); font-size: 15px; }
+
+  .clients { display: flex; flex-wrap: wrap; gap: 12px 40px; margin-top: 24px; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+
+  footer { padding: 40px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+  @media (max-width: 560px) {
+    nav a { margin-left: 16px; }
+    .hero { padding: 56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">Nordstern<span>.</span></a>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kunden">Kunden</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Performance Marketing, das sich rechnet.</h1>
+    <p class="lead">Ich betreue Google Ads, Meta Ads und E-Mail Marketing für E-Commerce Marken. Direkt, transparent und ohne Agentur Overhead.</p>
+    <a class="btn" href="#kontakt">Gespräch buchen</a>
+  </div>
+
+  <section id="leistungen">
+    <div class="wrap">
+      <h2>Was ich mache</h2>
+      <div class="services">
+        <div>
+          <h3>Google Ads</h3>
+          <p>Search, Shopping und Performance Max, sauber aufgebaut und laufend optimiert.</p>
+        </div>
+        <div>
+          <h3>Meta Ads</h3>
+          <p>Kreativ getriebene Kampagnen für Facebook und Instagram, die skalieren.</p>
+        </div>
+        <div>
+          <h3>E-Mail Marketing</h3>
+          <p>Flows und Kampagnen in Klaviyo, die aus Kontakten Käufer machen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ueber-mich">
+    <div class="wrap">
+      <h2>Über mich</h2>
+      <p>Ich bin Scharif, selbstständiger Performance Marketer mit rund 6 Jahren Erfahrung. Mein Hintergrund liegt in Psychologie mit Schwerpunkt Konsumentenpsychologie und im B2B Vertrieb.</p>
+      <p class="muted">Ich arbeite bewusst allein. Du sprichst immer direkt mit der Person, die deine Kampagnen betreut.</p>
+    </div>
+  </section>
+
+  <section id="kunden">
+    <div class="wrap">
+      <h2>Kunden</h2>
+      <p class="muted">Marken, für die ich arbeite. Platzhalter, wird ersetzt.</p>
+      <div class="clients">
+        <span>Kunde 1</span>
+        <span>Kunde 2</span>
+        <span>Kunde 3</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="wrap">
+      <h2>Lass uns sprechen</h2>
+      <p>In 30 Minuten klären wir, ob und wie ich dir helfen kann. Unverbindlich und kostenlos.</p>
+      <a class="btn" href="mailto:hallo@nord-stern.co">Gespräch anfragen</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Nordstern Marketing GmbH</span>
+    <span><a href="#">Impressum</a> &nbsp; <a href="#">Datenschutz</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

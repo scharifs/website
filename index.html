@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nordstern Marketing</title>
 <meta name="description" content="Performance Marketing für Ecom Brands. Google Ads, Meta Ads, TikTok Ads und Business Intelligence.">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0e1424" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://nord-stern.co/">
@@ -24,17 +24,7 @@
     --blue-press: #173ba8;
     --accent: #e8b931;
     --on-accent: #14213d;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0e1424;
-      --ink: #f2f4f8;
-      --muted: #9aa3b5;
-      --line: #263049;
-      --blue: #6f9bff;
-      --on-blue: #0e1424;
-      --blue-press: #5585f0;
-    }
+    color-scheme: light;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -93,9 +83,6 @@
   .clients .logo-birkholz { flex: 261 1 0; max-width: 261px; }
   .clients .logo-maniko { flex: 178 1 0; max-width: 178px; }
   .clients .logo-equipe { flex: 159 1 0; max-width: 159px; }
-  @media (prefers-color-scheme: dark) {
-    .clients img { filter: invert(1); opacity: 0.9; }
-  }
 
   footer { padding: 40px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
   footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
